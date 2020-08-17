@@ -3,7 +3,6 @@
 
 Scenario: Add two numbers
 Given I have a calculator that's turned on.
-
 When I enter "number1"
 And I press "+" button
 And I enter "number2"
@@ -11,9 +10,7 @@ And I press "=" button
 Then I see the "added sum" as the result
 
 Scenario: Add more numbers
-
 Given I have a calculator that's turned on and supports addition of more that two numbers
-
 When I enter "number1"
 And I press "+" button
 And I enter "number2"
@@ -30,19 +27,16 @@ When I press "=" button
 Then I see an error stating the result is out of bounds
 
 Scenario: Numbers can be negative
-
 When I press "-" and enter "number1"
 And I press "+" button
 And I enter "number2"
 And I press "=" button
 Then Subtract "number2" from "number1"
-
 When I press "-" and enter "number1"
 And I press "+" button
 And I press "-" and enter "number2"
 And I press "=" button
 Then display the added sum as negative number
-
 
 Scenario: Numbers can be fraction
 When I enter "number1" as fractional number
