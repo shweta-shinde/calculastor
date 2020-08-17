@@ -43,7 +43,7 @@ When I enter "number1" as irrational number
 And I press "-" button
 When I enter "number2" as irrational number
 And I press "=" button
-Then consider first six digits after decimal of each number for subtraction and display the result
+Then consider first six digits after decimal of each number for subtraction
 
 Scenario: Length of each number
 When I enter "number1"
