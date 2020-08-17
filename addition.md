@@ -10,7 +10,7 @@ And I press "=" button
 Then I see the "added sum" as the result
 
 Scenario: Add more numbers
-Given I have a calculator that's turned on and supports addition of more that two numbers
+Given I have a calculator that supports addition of more than two numbers
 When I enter "number1"
 And I press "+" button
 And I enter "number2"
@@ -50,8 +50,8 @@ When I enter "number1" as irrational number
 And I press "+" button
 When I enter "number2" as irrational number
 And I press "=" button
-Then consider first six digits after decimal of each number for addition and display the result
- 
+Then consider first six digits after decimal of each number for addition
+
 Scenario: Length of each number
 When I enter "number1"
 And I press "+" button
