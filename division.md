@@ -1,3 +1,6 @@
+
+# Division
+
 Scenario: Second number is 0 (friendly message)
 When I enter "number1"
 and press "/" button
@@ -64,4 +67,3 @@ When I enter "number1"
 and press "/" button
 and I enter "number3"
 Then display error message "Invalid Operation"
-
