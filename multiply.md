@@ -1,3 +1,5 @@
+# Multiply
+
 Scenario: Result overflow
 When I enter "number1"
 and I press "*" button
@@ -53,7 +55,7 @@ When I enter "number1" as decimal number
 and I press "*" button
 And I enter "number2" as integer number
 and I press "=" button
-Then Display the multiplication result by placing the decimal sign at appropriate place
+Then Display result by placing the decimal sign at appropriate place
 
 Scenario: More than two numbers multiplication
 When I enter "number1"
@@ -80,7 +82,7 @@ Then show an error message "invalid operation"
 
 Scenario: Interleaving operators (Press *, then press /, then press +)
 When I enter "number1"
-and I press "*" button 
+and I press "*" button
 and I enter other operators
 And I enter "number2"
 and I press "=" button
@@ -91,4 +93,4 @@ When I enter "number1"
 and I press "*" button
 And I enter "number2"
 and I press "=" button
-Then Round the final result of multiplication to six decimal places 
+Then Round the final result of multiplication to six decimal places
