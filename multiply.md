@@ -31,14 +31,14 @@ When I enter "number1" as decimal number
 and I press "*" button
 And I enter "number2" as decimal number
 and I press "=" button
-Then Display the multiplication result by placing the decimal sign at appropriate place
+Then Display result by placing the decimal sign at appropriate place
 
 Scenario: Irrational value multiplication
 When I enter "number1" as irrational number
 and I press "*" button
 And I enter "number2" as irrational number
 and I press "=" button
-Then Display the multiplication result by considering first six digit after decimal point
+Then Display result considering first six digit after decimal point
 
 Scenario: Simple multiplication
 When I enter "number1"
@@ -64,8 +64,6 @@ And so on till "numbern"
 And I press "=" button
 Then I see the multiplication of all given numbers as the result
 
-Scenario: Complex number multiplication
-
 Scenario: Range of operand exceeds allowed limit
 When I enter "number1"
 and I press "*" button
@@ -73,14 +71,12 @@ And I enter "number2"
 and I press "=" button
 Then show an error message "input is out of bounds"
 
-
 Scenario: Pressing "multiply button" more than once
 When I enter "number1"
 and I press "*" button more than once
 And I enter "number2"
 and I press "=" button
 Then show an error message "invalid operation"
-
 
 Scenario: Interleaving operators (Press *, then press /, then press +)
 When I enter "number1"
